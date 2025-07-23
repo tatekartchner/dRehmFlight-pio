@@ -1,5 +1,4 @@
-#ifndef RECEIVER_FACTORY_H
-#define RECEIVER_FACTORY_H
+#pragma once
 
 #include "Receiver_Interface.h"
 #include "config.h"
@@ -25,5 +24,4 @@ static Receiver_Interface& createRadioReceiver(HardwareSerial* serial) {
     #endif
 }
 
-#endif
 

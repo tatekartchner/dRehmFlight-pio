@@ -1,5 +1,4 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+#pragma once
 
 #include <Arduino.h>
 
@@ -121,7 +120,7 @@ namespace Config {
     constexpr int ch5Pin = 21; // Gear (Throttle cut)
     constexpr int ch6Pin = 22; // Aux1 (Free aux channel)
 
-    //OneShot125 ESC pin outputs:
+    // OneShot125 ESC pin outputs:
     constexpr int m1Pin = 0;
     constexpr int m2Pin = 1;
     constexpr int m3Pin = 2;
@@ -129,7 +128,7 @@ namespace Config {
     constexpr int m5Pin = 4;
     // constexpr int m6Pin = 5;
 
-    //PWM servo or ESC outputs:
+    // PWM servo or ESC outputs:
     constexpr int esc_Pin = 5;
     constexpr int servo1Pin = 6;
     constexpr int servo2Pin = 7;
@@ -138,7 +137,9 @@ namespace Config {
     constexpr int servo5Pin = 10;
     constexpr int servo6Pin = 11;
     constexpr int servo7Pin = 12;
+
+    // Servo min and max pulse widths
+    constexpr int servo_min_us = 900;
+    constexpr int servo_max_us = 2100;
+
 }
-
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef CRSF_RECEIVER_H
-#define CRSF_RECEIVER_H
+#pragma once
 
 #include <Arduino.h>
 #include "CRSFforArduino.hpp"
@@ -28,4 +27,3 @@ private:
     bool ready;
 };
 
-#endif
